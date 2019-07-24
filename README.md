@@ -1,8 +1,8 @@
 # PanGIA Bioinformatics
 
-The bioinformatics pipeline leverages BWA-mem to identify ‘where’ reads belong to provides taxonomy identification specific to strain-level. Other than community profiling, PanGIA uses two approaches to obtain a metric of confidence, one that relies on uniqueness of sequences and the other one that relies on comparing test samples with control samples (organism-basis).
+The bioinformatics pipeline leverages BWA/Minimap2 to identify ‘where’ reads belong to provides taxonomy identification specific to strain-level. Other than community profiling, PanGIA uses two approaches to obtain a metric of confidence, one that relies on uniqueness of sequences and the other one that relies on comparing test samples with control samples (organism-basis).
 
-The software associated web-based user interface for job submission and interactive result visualization for providing pathogenic information and real-time filtering results. The pipeline was tested and validated using many synthetic datasets ranging in community composition and complexity, and was successfully applied to spiked clinical samples.
+The software associated a web-based user interface for job submission in docker and interactive result visualization for providing pathogenic information and real-time filtering results. The pipeline was tested and validated using many synthetic datasets ranging in community composition and complexity, and was successfully applied to spiked clinical samples.
 
 The docker version is also available at [Docker hub](https://hub.docker.com/r/poeli/pangia). The docker container runs PanGIA-UI that provides a web-based GUI to facilitate users to analyze their datasets through PanGIA and access to results.
 
