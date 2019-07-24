@@ -1,0 +1,145 @@
+[00:00:00] Starting PanGIA 2.4.3 BETA
+[00:00:00] Arguments and dependencies checked:
+[00:00:00]     Input reads       : ['../../datasets/Ecoli_10x/Ecoli_10x.1.fastq', '../../datasets/Ecoli_10x/Ecoli_10x.2.fastq']
+[00:00:00]     Input SAM file    : ./Ecoli_10x_v2_4_3.pangia.sam
+[00:00:00]     Input background  : None
+[00:00:00]     Scoring method    : standalone
+[00:00:00]     Database          : ['../database/JCVI_human_genome.fa', '../database/NCBI_genomes_refseq86_BAV.fa', '../database/NCBI_genomes_refseq86_Human_CHM1_1.1.fa', '../database/NCBI_genomes_refseq86_Human_GRCh38.p11.fa', '../database/NCBI_genomes_refseq86_Plasmodium.fa', '../database/NCBI_genomes_refseq86_mosquitos.fa']
+[00:00:00]     Abundance         : DEPTH_COV
+[00:00:00]     Output path       : .
+[00:00:00]     Prefix            : Ecoli_10x_v2_4_3
+[00:00:00]     Mode              : report
+[00:00:00]     Specific taxid    : None
+[00:00:00]     Threads           : 8
+[00:00:00]     First #refs in XA : 30
+[00:00:00]     Extra NM in XA    : 1
+[00:00:00]     Minimal score     : 0
+[00:00:00]     Minimal RSNB      : 3
+[00:00:00]     Minimal reads     : 10
+[00:00:00]     Minimal linear len: 400
+[00:00:00]     Minimal genome cov: 0.01
+[00:00:00]     Minimal depth (DC): 0.01
+[00:00:00]     Minimal RSDCnr    : 0.001
+[00:00:00]     Aligner option    : -h150 -B2
+[00:00:00]     Aligner seed len  : 40
+[00:00:00]     Aligner min score : 60
+[00:00:00]     Aligner path      : /Users/paulli/anaconda3/bin/bwa
+[00:00:00] Loading taxonomy information...
+[00:00:08] Done.
+[00:00:08] Loading pathogen information...
+[00:00:08] Done. 2817 pathogens loaded.
+[00:00:08] Loading taxonomic uniqueness information...
+[00:00:08] Done. 9268 taxonomic uniqueness loaded.
+[00:00:08] Loading sizes of genomes...
+[00:00:08] Done. 9281 target and 7 host genome(s) loaded.
+[00:00:08] Running read-mapping...
+[00:00:08] Mapping to ../database/JCVI_human_genome.fa...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 331126 sequences (50000026 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 16, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (142, 208, 292)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 592)
+[M::mem_pestat] mean and std.dev: (230.38, 98.07)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 742)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 331126 reads in 62.641 CPU sec, 7.837 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -k40 -T60 -h150 -B2 -t8 ../database/JCVI_human_genome.fa ../../datasets/Ecoli_10x/Ecoli_10x.1.fastq ../../datasets/Ecoli_10x/Ecoli_10x.2.fastq
+[main] Real time: 17.732 sec; CPU: 68.256 sec
+[00:00:26] Mapping to ../database/NCBI_genomes_refseq86_BAV.fa...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 331126 sequences (50000026 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 6634, 0, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (285, 298, 312)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (231, 366)
+[M::mem_pestat] mean and std.dev: (298.33, 17.34)
+[M::mem_pestat] low and high boundaries for proper pairs: (204, 393)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 331126 reads in 112.401 CPU sec, 17.108 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -k40 -T60 -h150 -B2 -t8 ../database/NCBI_genomes_refseq86_BAV.fa ../../datasets/Ecoli_10x/Ecoli_10x.1.fastq ../../datasets/Ecoli_10x/Ecoli_10x.2.fastq
+[main] Real time: 44.343 sec; CPU: 126.448 sec
+[00:01:10] Mapping to ../database/NCBI_genomes_refseq86_Human_CHM1_1.1.fa...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 331126 sequences (50000026 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 16, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (142, 208, 292)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 592)
+[M::mem_pestat] mean and std.dev: (230.38, 98.07)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 742)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 331126 reads in 59.699 CPU sec, 7.467 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -k40 -T60 -h150 -B2 -t8 ../database/NCBI_genomes_refseq86_Human_CHM1_1.1.fa ../../datasets/Ecoli_10x/Ecoli_10x.1.fastq ../../datasets/Ecoli_10x/Ecoli_10x.2.fastq
+[main] Real time: 14.503 sec; CPU: 65.267 sec
+[00:01:25] Mapping to ../database/NCBI_genomes_refseq86_Human_GRCh38.p11.fa...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 331126 sequences (50000026 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 15, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (142, 207, 278)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 550)
+[M::mem_pestat] mean and std.dev: (216.07, 83.56)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 686)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 331126 reads in 61.873 CPU sec, 7.739 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -k40 -T60 -h150 -B2 -t8 ../database/NCBI_genomes_refseq86_Human_GRCh38.p11.fa ../../datasets/Ecoli_10x/Ecoli_10x.1.fastq ../../datasets/Ecoli_10x/Ecoli_10x.2.fastq
+[main] Real time: 15.416 sec; CPU: 68.049 sec
+[00:01:40] Mapping to ../database/NCBI_genomes_refseq86_Plasmodium.fa...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 331126 sequences (50000026 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 3, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 331126 reads in 46.337 CPU sec, 5.796 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -k40 -T60 -h150 -B2 -t8 ../database/NCBI_genomes_refseq86_Plasmodium.fa ../../datasets/Ecoli_10x/Ecoli_10x.1.fastq ../../datasets/Ecoli_10x/Ecoli_10x.2.fastq
+[main] Real time: 8.335 sec; CPU: 47.561 sec
+[00:01:48] Mapping to ../database/NCBI_genomes_refseq86_mosquitos.fa...
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 331126 sequences (50000026 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 0, 0, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] skip orientation FR as there are not enough pairs
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_process_seqs] Processed 331126 reads in 68.762 CPU sec, 8.599 real sec
+[main] Version: 0.7.17-r1188
+[main] CMD: bwa mem -k40 -T60 -h150 -B2 -t8 ../database/NCBI_genomes_refseq86_mosquitos.fa ../../datasets/Ecoli_10x/Ecoli_10x.1.fastq ../../datasets/Ecoli_10x/Ecoli_10x.2.fastq
+[main] Real time: 18.342 sec; CPU: 77.013 sec
+[00:02:07] Done mapping reads to the database(s).
+[00:02:07] Merging SAM files...
+[00:02:20] Logfile saved to ./Ecoli_10x_v2_4_3.pangia.log.
+[00:02:20] Done. Mapped SAM file saved to ./Ecoli_10x_v2_4_3.pangia.sam.
+[00:02:20] Total number of input reads: 331128
+[00:02:20] Total number of mapped reads: 327590
+[00:02:20] Total number of host reads: 44 (0.01%)
+[00:02:20] Total number of ignored reads (cross superkingdom): 2282 (0.70%)
+[00:02:20] Processing SAM file... 
+[00:02:20] Spliting SAM file by 15000 lines...
+[00:02:21] Done. Split into 22 files.
+[00:02:21] Parsing SAM files with 8 subprocesses...
+[00:03:41] Merging results...
+[00:03:41] Done.
+[00:03:42] Calculating linear length...
+[00:04:14] Done processing SAM file, 322782 alignment(s).
+[00:04:14] Rolling up taxonomies...
+[00:04:14] 33 strain(s) mapped.
+[00:04:14] Done.
+[00:04:14] Calculating standalone score...
+[00:04:14] Done calculating.
+[00:04:14] Done taxonomy profiling; report results saved to ./Ecoli_10x_v2_4_3.report.tsv.

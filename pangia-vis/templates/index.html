@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PanGIA Bioinformatics</title>
+        {{ bokeh_css }}
+        {{ bokeh_js }}
+        <style>
+            @import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+            html {
+              width: 100%;
+              height: 100%;
+            }
+            body {
+              font-family: 'Noto Sans', sans-serif;
+              -webkit-font-smoothing: antialiased;
+              text-rendering: optimizeLegibility;
+              color: #2F2F2F;
+              /*background: #fff;*/
+              font-size: 10px;
+              width: 90%;
+              height: 100%;
+              margin: auto;
+            }
+            .bk-root .bk-ui-widget {
+              font-family: 'Noto Sans', sans-serif;
+              font-size: 0.9em;
+            }
+            .table {
+                /*margin: 0 0 40px 0;*/
+                width: 97%;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+                display: table;
+                border: #ffffff thin solid;
+            }
+            .row {
+                display: table-row;
+                background: #f6f6f6;
+            }
+            .row.header {
+                font-weight: 900;
+                color: #ffffff;
+                background: #ea6153;
+            }
+            .row.green {
+                background: #27ae60;
+            }
+            .cell {
+                padding: 6px 12px;
+                display: table-cell;
+                width: 120px;
+                height: 40px;
+                vertical-align: middle;
+            }
+        </style>
+    </head>
+    <body>
+        {{ plot_div|indent(8) }}
+        {{ plot_script|indent(8) }}
+    </body>
+</html>
